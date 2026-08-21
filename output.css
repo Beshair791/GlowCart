@@ -205,6 +205,15 @@
   }
 }
 @layer utilities {
+  .visible {
+    visibility: visible;
+  }
+  .relative {
+    position: relative;
+  }
+  .static {
+    position: static;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -235,11 +244,20 @@
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
+  .block {
+    display: block;
+  }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
+  }
+  .table {
+    display: table;
   }
   .h-56 {
     height: calc(var(--spacing) * 56);
@@ -459,6 +477,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .uppercase {
+    text-transform: uppercase;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
